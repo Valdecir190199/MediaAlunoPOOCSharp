@@ -5,20 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp3
-
-
-
-
-
 {
 
-
-
-
 public class Aluno 
-        { 
-            
-        
+        {                 
             public String Materia { get; set; }
             public String Ra { get; set; }
             public String Nome { get; set; } 
@@ -26,11 +16,6 @@ public class Aluno
             public double p2 { get; set; }
             public double media { get; set; }
         } 
-
-
-
-
-
 
     class Program
     {
@@ -74,22 +59,14 @@ public class Aluno
             aluno.p2 = Convert.ToDouble(Console.ReadLine());;
 
 
-
             }while(aluno.p1 >= 11 & aluno.p2 >=11);
 
-
-
             aluno.media = (aluno.p1 + aluno.p2) / 2;    
-            
-            
-                  
-
-
+  
             if(aluno.media >= 6) {
              Console.Write("\nAluno Aprovado");
 
             }else{
-
 
              Console.Write("\nAluno Reprovado");
                 
@@ -106,11 +83,6 @@ public class Aluno
 
 
             }while(opcao == 1);
-
-
-            
-
-
 
 
 
