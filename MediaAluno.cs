@@ -32,6 +32,12 @@ public class Aluno
             Aluno aluno = new Aluno();
             
 
+             Console.Write("\n*****************************************************************************: ");
+             Console.Write("\nSeja Bem Vindo: \n");
+             Console.Write("\nCadastro de Alunos e Medias Finais: \n");
+
+
+
             Console.Write("\nDigite o nome do aluno: ");
             
             aluno.Nome = Console.ReadLine();
@@ -78,7 +84,7 @@ public class Aluno
             
             
             
-            Console.Write("\nDigite 1 para cadastrar de novo ou qualquer tecla para sair....");
+            Console.Write("\nDigite 1 para cadastrar de novo ou qualquer numero para sair....");
             opcao = Convert.ToInt32(Console.ReadLine()); 
 
 
