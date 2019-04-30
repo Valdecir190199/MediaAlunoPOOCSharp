@@ -21,77 +21,55 @@ public class Aluno
     {
         static void Main(string[] args)
         {
-
-
             int opcao;
-
-            do{
-
+            do{            
+                Aluno aluno = new Aluno();           
+                Console.Write("\n*****************************************************************************: ");
+                Console.Write("\nSeja Bem Vindo: \n");
+                Console.Write("\nCadastro de Alunos e Medias Finais: \n");
+                Console.Write("\nDigite o nome do aluno: ");
             
+                aluno.Nome = Console.ReadLine();
 
-            Aluno aluno = new Aluno();
+                Console.Write("\nDigite o RA do Aluno: ");
             
+                aluno.Ra =  Console.ReadLine();          
 
-             Console.Write("\n*****************************************************************************: ");
-             Console.Write("\nSeja Bem Vindo: \n");
-             Console.Write("\nCadastro de Alunos e Medias Finais: \n");
-
-
-
-            Console.Write("\nDigite o nome do aluno: ");
+                Console.Write("\nDigite a Materia do aluno: ");
             
-            aluno.Nome = Console.ReadLine();
+                aluno.Materia = Console.ReadLine();
 
-            Console.Write("\nDigite o RA do Aluno: ");
-            
-            aluno.Ra =  Console.ReadLine();          
-
-            Console.Write("\nDigite a Materia do aluno: ");
-            
-            aluno.Materia = Console.ReadLine();
-
-            do{
-
-            
-            Console.Write("\nNota Maxima 10: ");  
+                do{
+           
+                    Console.Write("\nNota Maxima 10: ");  
 
 
-            Console.Write("\nDigite a primeira nota do aluno: ");
+                    Console.Write("\nDigite a primeira nota do aluno: ");
 
-            aluno.p1 = Convert.ToDouble(Console.ReadLine());
+                    aluno.p1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("\nDigite a segunda nota do Aluno: ");
+                    Console.Write("\nDigite a segunda nota do Aluno: ");
 
-            aluno.p2 = Convert.ToDouble(Console.ReadLine());
+                    aluno.p2 = Convert.ToDouble(Console.ReadLine());
 
+                }while(aluno.p1 >= 11 && aluno.p2 >=11);
 
-            }while(aluno.p1 >= 11 & aluno.p2 >=11);
-
-            aluno.media = (aluno.p1 + aluno.p2) / 2;    
+                aluno.media = (aluno.p1 + aluno.p2) / 2;    
   
-            if(aluno.media >= 6) {
-             Console.Write("\nAluno Aprovado");
+                if(aluno.media >= 6) {
+                    Console.Write("\nAluno Aprovado");
 
-            }else{
+                }else{
 
-             Console.Write("\nAluno Reprovado");
-                
+                Console.Write("\nAluno Reprovado");                
             }
-
-            Console.Write("\n***************************************************************************");
-            Console.Write("\nNome: {0} \tMateria: {1} \tR.A: {2}", aluno.Nome, aluno.Materia, aluno.Ra);
-            Console.Write("\nNotas: \tP1: {0} \tP2: {1} \tMédia: {2}", aluno.p1, aluno.p2, aluno.media);
-            
-            
-            
-            Console.Write("\nDigite 1 para cadastrar de novo ou qualquer numero para sair....");
-            opcao = Convert.ToInt32(Console.ReadLine()); 
-
+                Console.Write("\n***************************************************************************");
+                Console.Write("\nNome: {0} \tMateria: {1} \tR.A: {2}", aluno.Nome, aluno.Materia, aluno.Ra);
+                Console.Write("\nNotas: \tP1: {0} \tP2: {1} \tMédia: {2}", aluno.p1, aluno.p2, aluno.media);                                  
+                Console.Write("\nDigite 1 para cadastrar de novo ou qualquer numero para sair....");
+                opcao = Convert.ToInt32(Console.ReadLine()); 
 
             }while(opcao == 1);
-
-
-
         }
     }
 }
