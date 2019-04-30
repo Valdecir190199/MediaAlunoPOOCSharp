@@ -30,12 +30,22 @@ public class Aluno
 
 
 
+
+
     class Program
     {
         static void Main(string[] args)
         {
 
+
+            double opcao;
+
+            do{
+
+            
+
             Aluno aluno = new Aluno();
+            
 
             Console.Write("\nDigite o nome do aluno: ");
             
@@ -60,6 +70,9 @@ public class Aluno
 
             aluno.media = (aluno.p1 + aluno.p2) / 2;    
             
+            
+                  
+
 
             if(aluno.media >= 6) {
              Console.Write("\nAluno Aprovado");
@@ -77,8 +90,14 @@ public class Aluno
             
             
             
-            Console.Write("\nDigite qualquer tecla para sair....");
-            Console.ReadKey();
+            Console.Write("\nDigite 1 para cadastrar de novo ou qualquer tecla para sair....");
+            opcao = Convert.ToDouble(Console.ReadLine());;
+
+
+            }while(opcao == 1);
+
+
+            
 
 
 
