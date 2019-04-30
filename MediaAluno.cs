@@ -23,7 +23,7 @@ public class Aluno
         {
 
 
-            double opcao;
+            int opcao;
 
             do{
 
@@ -38,7 +38,7 @@ public class Aluno
 
             Console.Write("\nDigite o RA do Aluno: ");
             
-            aluno.Ra = Console.ReadLine();           
+            aluno.Ra =  Console.ReadLine();          
 
             Console.Write("\nDigite a Materia do aluno: ");
             
@@ -56,7 +56,7 @@ public class Aluno
 
             Console.Write("\nDigite a segunda nota do Aluno: ");
 
-            aluno.p2 = Convert.ToDouble(Console.ReadLine());;
+            aluno.p2 = Convert.ToDouble(Console.ReadLine());
 
 
             }while(aluno.p1 >= 11 & aluno.p2 >=11);
@@ -79,7 +79,7 @@ public class Aluno
             
             
             Console.Write("\nDigite 1 para cadastrar de novo ou qualquer tecla para sair....");
-            opcao = Convert.ToDouble(Console.ReadLine());;
+            opcao = Convert.ToInt32(Console.ReadLine()); 
 
 
             }while(opcao == 1);
