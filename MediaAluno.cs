@@ -59,6 +59,12 @@ public class Aluno
             
             aluno.Materia = Console.ReadLine();
 
+            do{
+
+            
+            Console.Write("\nNota Maxima 10: ");  
+
+
             Console.Write("\nDigite a primeira nota do aluno: ");
 
             aluno.p1 = Convert.ToDouble(Console.ReadLine());
@@ -66,6 +72,11 @@ public class Aluno
             Console.Write("\nDigite a segunda nota do Aluno: ");
 
             aluno.p2 = Convert.ToDouble(Console.ReadLine());;
+
+
+
+            }while(aluno.p1 >= 11 & aluno.p2 >=11);
+
 
 
             aluno.media = (aluno.p1 + aluno.p2) / 2;    
